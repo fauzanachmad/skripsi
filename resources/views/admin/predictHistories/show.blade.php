@@ -41,10 +41,10 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.predictHistory.fields.user') }}
+                            <!-- {{ trans('cruds.predictHistory.fields.user') }}
                         </th>
-                        <td>
-                            {{ $predictHistory->user->name ?? '' }}
+                        <td> -->
+                            <!-- {{ $predictHistory->user->name ?? '' }}
                         </td>
                     </tr>
                     <tr>
@@ -54,8 +54,8 @@
                         <td>
                             {{ $predictHistory->user_agent }}
                         </td>
-                    </tr>
-                </tbody>
+                    </tr> -->
+                <!-- </tbody> -->
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.predict-histories.index') }}">

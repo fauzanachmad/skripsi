@@ -2,7 +2,8 @@
 
     <div class="c-sidebar-brand d-md-down-none">
         <a class="c-sidebar-brand-full h4" href="#">
-            {{ trans('panel.site_title') }}
+            <!-- {{ trans('panel.site_title') }} -->
+            prediksi
         </a>
     </div>
 
@@ -17,11 +18,11 @@
         </li>
         @can('user_management_access')
             <li class="c-sidebar-nav-dropdown {{ request()->is("admin/permissions*") ? "c-show" : "" }} {{ request()->is("admin/roles*") ? "c-show" : "" }} {{ request()->is("admin/users*") ? "c-show" : "" }}">
-                <a class="c-sidebar-nav-dropdown-toggle" href="#">
-                    <i class="fa-fw fas fa-users c-sidebar-nav-icon">
+                <!-- <a class="c-sidebar-nav-dropdown-toggle" href="#"> -->
+                    <!-- <i class="fa-fw fas fa-users c-sidebar-nav-icon"> -->
 
                     </i>
-                    {{ trans('cruds.userManagement.title') }}
+                    <!-- {{ trans('cruds.userManagement.title') }} -->
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
                     @can('permission_access')
@@ -81,11 +82,11 @@
         @endcan
         @can('setting_access')
             <li class="c-sidebar-nav-item">
-                <a href="{{ route("admin.settings.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/settings") || request()->is("admin/settings/*") ? "c-active" : "" }}">
-                    <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
+                <!-- <a href="{{ route("admin.settings.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/settings") || request()->is("admin/settings/*") ? "c-active" : "" }}"> -->
+                    <!-- <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
 
                     </i>
-                    {{ trans('cruds.setting.title') }}
+                    {{ trans('cruds.setting.title') }} -->
                 </a>
             </li>
         @endcan

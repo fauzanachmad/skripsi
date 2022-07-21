@@ -6,11 +6,11 @@
                 <a class="btn btn-success" href="{{ route('admin.predict-histories.create') }}">
                     {{ trans('global.add') }} {{ trans('cruds.predictHistory.title_singular') }}
                 </a>
-                <button class="btn btn-warning" data-toggle="modal" data-target="#csvImportModal">
+                <!-- <button class="btn btn-warning" data-toggle="modal" data-target="#csvImportModal">
                     {{ trans('global.app_csvImport') }}
                 </button>
                 @include('csvImport.modal', ['model' => 'PredictHistory', 'route' => 'admin.predict-histories.parseCsvImport'])
-            </div>
+            </div> -->
         </div>
     @endcan
     <div class="card">
@@ -34,12 +34,12 @@
                     <th>
                         {{ trans('cruds.predictHistory.fields.label') }}
                     </th>
-                    <th>
+                    <!-- <th>
                         {{ trans('cruds.predictHistory.fields.user') }}
                     </th>
                     <th>
                         {{ trans('cruds.predictHistory.fields.user_agent') }}
-                    </th>
+                    </th> -->
                     <th>
                         &nbsp;
                     </th>
@@ -56,17 +56,17 @@
                     <td>
                         <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
-                    <td>
+                     <!-- <td>
                         <select class="search">
                             <option value>{{ trans('global.all') }}</option>
                             @foreach($users as $key => $item)
                                 <option value="{{ $item->name }}">{{ $item->name }}</option>
                             @endforeach
-                        </select>
+                        </select> 
                     </td>
                     <td>
                         <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                    </td>
+                    </td>  -->
                     <td>
                     </td>
                 </tr>
@@ -126,8 +126,8 @@
                     {data: 'id', name: 'id'},
                     {data: 'title', name: 'title'},
                     {data: 'view', name: 'view'},
-                    {data: 'user_name', name: 'user.name'},
-                    {data: 'user_agent', name: 'user_agent'},
+                    // {data: 'user_name', name: 'user.name'},
+                    // {data: 'user_agent', name: 'user_agent'},
                     {data: 'actions', name: '{{ trans('global.actions') }}'}
                 ],
                 orderCellsTop: true,

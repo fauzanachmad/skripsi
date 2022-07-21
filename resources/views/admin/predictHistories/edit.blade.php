@@ -29,7 +29,7 @@
                     </div>
                 @endif
                 <span class="help-block">{{ trans('cruds.predictHistory.fields.view_helper') }}</span>
-            </div>
+            <!-- </div>
             <div class="form-group">
                 <label for="user_id">{{ trans('cruds.predictHistory.fields.user') }}</label>
                 <select class="form-control select2 {{ $errors->has('user') ? 'is-invalid' : '' }}" name="user_id" id="user_id">
@@ -50,14 +50,14 @@
                 @if($errors->has('user_agent'))
                     <div class="invalid-feedback">
                         {{ $errors->first('user_agent') }}
-                    </div>
-                @endif
+                    </div> -->
+                <!-- @endif
                 <span class="help-block">{{ trans('cruds.predictHistory.fields.user_agent_helper') }}</span>
             </div>
             <div class="form-group">
                 <button class="btn btn-danger" type="submit">
-                    {{ trans('global.save') }}
-                </button>
+                    <!-- {{ trans('global.save') }} -->
+                <!-- </button> --> -->
             </div>
         </form>
     </div>
