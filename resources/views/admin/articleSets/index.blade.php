@@ -13,6 +13,7 @@
         </div>
     </div>
 @endcan
+
 <div class="card">
     <div class="card-header">
         {{ trans('cruds.articleSet.title_singular') }} {{ trans('global.list') }}

@@ -33,29 +33,29 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.predictHistory.fields.view') }}
+                            {{ trans('cruds.predictHistory.fields.label') }}
                         </th>
                         <td>
                             {{ $predictHistory->view }}
-                        </td>
+                        {{-- </td>
                     </tr>
                     <tr>
-                        <th>
-                            <!-- {{ trans('cruds.predictHistory.fields.user') }}
-                        </th>
-                        <td> -->
-                            <!-- {{ $predictHistory->user->name ?? '' }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            {{ trans('cruds.predictHistory.fields.user_agent') }}
+                        <th> --}}
+                            {{-- {{ trans('cruds.predictHistory.fields.user') }}
                         </th>
                         <td>
-                            {{ $predictHistory->user_agent }}
+                            {{ $predictHistory->user->name ?? '' }}
                         </td>
-                    </tr> -->
-                <!-- </tbody> -->
+                    </tr>
+                    <tr>
+                        <th>
+                            {{-- {{ trans('cruds.predictHistory.fields.user_agent') }} --}}
+                        {{-- </th>
+                        <td>
+                            {{ $predictHistory->user_agent }}
+                        </td> --}} 
+                    </tr>
+                </tbody>
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.predict-histories.index') }}">

@@ -1,21 +1,56 @@
 @extends('layouts.admin')
 @section('content')
 @can('article_create')
-    <div style="margin-bottom: 10px;" class="row">
+    {{-- <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.articles.create') }}">
                 {{ trans('global.add') }} {{ trans('cruds.article.title_singular') }}
             </a>
         </div>
-    </div>
+    </div> --}}
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.article.title_singular') }} {{ trans('global.list') }}
+        {{-- {{ trans('cruds.article.title_singular') }} {{ trans('global.list') }} --}}
+        Akuration Presision
     </div>
 
     <div class="card-body">
-        <table class=" table table-bordered table-striped table-hover ajaxTable datatable datatable-Article">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>Fi-Score</th>
+                <th>Support</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Popular</td>
+                <td>0.76</td>
+                <td>0.74</td>
+                <td>0.75</td>
+                <td>208</td>
+              </tr>
+              <tr>
+                <td>Standart</td>
+                <td>0.77</td>
+                <td>0.71</td>
+                <td>0.74</td>
+                <td>207</td>
+              </tr>
+              <tr>
+                <td>Kurang Popular</td>
+                <td>0.68</td>
+                <td>0.77</td>
+                <td>0.72</td>
+                <td>185</td>
+              </tr>
+            </tbody>
+            </table>
+        {{-- <table class=" table table-bordered table-striped table-hover ajaxTable datatable datatable-Article">
             <thead>
                 <tr>
                     <th width="10">
@@ -50,7 +85,7 @@
                     </td>
                 </tr>
             </thead>
-        </table>
+        </table> --}}
     </div>
 </div>
 
